@@ -35,10 +35,7 @@ namespace Meller_UNIT
         }
         public double Average(double[] array)
         {
-            double summ = 0;
-            for (int i = 0; i < array.Length; i++)
-                summ += array[i];
-
+            double summ = array.Sum();
             return summ / array.Length;
         }
     }
